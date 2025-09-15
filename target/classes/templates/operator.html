@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="'Operador - ' + ${roleName}">Operador</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body class="operator-page">
+    <div class="container">
+        <h1 th:text="'OPERADOR - ' + ${roleName}">OPERADOR</h1>
+        
+        <div class="current-info">
+            <div class="current-ticket">
+                <span>TURNO ACTUAL:</span>
+                <div id="currentTicket" class="ticket-display">---</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="btnNext" class="next-button" th:data-role="${role}">
+                SIGUIENTE
+            </button>
+        </div>
+
+        <div class="queue-info">
+            <span>En cola: <span id="queueSize">0</span></span>
+        </div>
+    </div>
+
+    <script th:inline="javascript">
+        const operatorRole = [[${role}]];
+    </script>
+    <script src="/js/operator.js"></script>
+</body>
+</html>

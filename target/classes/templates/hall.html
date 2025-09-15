@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Display - Turnos</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body class="hall-page">
+    <div class="hall-container">
+        <h1 class="hall-title">TURNOS</h1>
+        
+        <div class="queues-display">
+            <div class="queue-widget asesoria-widget">
+                <h2>ASESORIA</h2>
+                <div id="currentA" class="current-number">---</div>
+                <div class="queue-label">TURNO ACTUAL</div>
+            </div>
+            
+            <div class="queue-widget caja-widget">
+                <h2>CAJA</h2>
+                <div id="currentC" class="current-number">---</div>
+                <div class="queue-label">TURNO ACTUAL</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/sockjs.min.js"></script>
+    <script src="/js/stomp.min.js"></script>
+    <script src="/js/hall.js"></script>
+</body>
+</html>

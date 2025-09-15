@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomar Turno - Kiosk</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body class="kio">
+    <div class="container">
+        <h1>SELECCIONE SU OPCIÓN</h1>
+        
+        <div class="buttons-container">
+            <button id="btnAsesoria" class="queue-button asesoria-btn">
+                <span class="button-text">ASESORIA</span>
+            </button>
+            
+            <button id="btnCaja" class="queue-button caja-btn">
+                <span class="button-text">CAJA</span>
+            </button>
+        </div>
+
+        <div id="ticketDisplay" class="ticket-display" style="display: none;">
+            <h2>SU TURNO ES:</h2>
+            <div id="ticketNumber" class="ticket-number"></div>
+        </div>
+    </div>
+
+    <script src="/js/kiosk.js"></script>
+</body>
+</html>

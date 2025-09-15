@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Kiosk Styles */
+.kiosk-page h1 {
+    font-size: 48px;
+    margin-bottom: 60px;
+    color: #333;
+    text-align: center;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.queue-button {
+    width: 300px;
+    height: 200px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.asesoria-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.caja-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.queue-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+}
+
+.button-text {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.ticket-display {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.ticket-display h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.ticket-number {
+    font-size: 72px;
+    color: #007bff;
+    font-weight: bold;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Operator Styles */
+.operator-page {
+    background-color: #e8f4f8;
+}
+
+.operator-page h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.current-info {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.current-ticket span {
+    font-size: 24px;
+    color: #666;
+}
+
+.current-ticket .ticket-display {
+    font-size: 48px;
+    color: #007bff;
+    margin-top: 10px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.next-button {
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.next-button:hover {
+    background-color: #E64A19;
+    transform: translateY(-2px);
+}
+
+.queue-info {
+    font-size: 20px;
+    color: #666;
+}
+
+/* Hall TV Display Styles */
+.hall-page {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.hall-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.hall-title {
+    font-size: 64px;
+    margin-bottom: 80px;
+    color: white;
+    text-align: center;
+}
+
+.queues-display {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.queue-widget {
+    background-color: #2a2a2a;
+    border-radius: 20px;
+    padding: 40px;
+    min-width: 400px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.queue-widget h2 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.asesoria-widget h2 {
+    color: #2196F3;
+}
+
+.caja-widget h2 {
+    color: #4CAF50;
+}
+
+.current-number {
+    font-size: 96px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #3a3a3a;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.queue-label {
+    font-size: 24px;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .buttons-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .queues-display {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .queue-widget {
+        min-width: 300px;
+    }
+    
+    .hall-title {
+        font-size: 48px;
+    }
+    
+    .current-number {
+        font-size: 72px;
+    }
+}
