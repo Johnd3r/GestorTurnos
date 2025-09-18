@@ -1,7 +1,0 @@
-com/queueapp/config/WebSocketConfig.class
-com/queueapp/model/Ticket.class
-com/queueapp/controller/ApiController.class
-com/queueapp/service/QueueService.class
-com/queueapp/QueueApplication.class
-com/queueapp/config/SchedulerConfig.class
-com/queueapp/controller/WebController.class
